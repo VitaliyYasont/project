@@ -43,6 +43,20 @@ button {
     background-color: transparent;
 }
 
+.title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    color: #363940;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #95a1bb;
+}
+
 /*=================================style 1 section============*/
 
 .main-title {
@@ -53,11 +67,7 @@ button {
     margin-bottom: 30px;
 }
 
-.text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #95a1bb;
+.main .text {
     margin-bottom: 40px;
 }
 
@@ -80,12 +90,12 @@ button {
     padding: 100px;
 }
 
-.title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 43px;
-    color: #363940;
+.rates-section .title {
     margin-bottom: 20px;
+}
+
+.rates-section .text {
+    margin-bottom: 40px;
 }
 
 .table {
@@ -154,9 +164,77 @@ th, td {
     padding: 100px;
 }
 
+.create-account-section .title {
+    margin-bottom: 50px;
+}
+
+.create-account-section .text {
+    margin-bottom: 40px;
+    max-width: 500px;
+}
 .list-item {
     list-style-image: url(./assets/image/Check.svg);
     margin-left: 30px;
     margin-bottom: 15px;
     color: #363940;
+}
+
+input, select, textarea, fieldset {
+    border: 1px solid #95a1bb;
+    border-radius: 4px;
+    padding: 14px 15px;
+}
+
+input, select, textarea, fieldset, label, legend, input::placeholder, select::placeholder, textarea::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #95a1bb;
+    font-family: inherit;
+}
+
+input [type="text"] {
+    width: 100%;
+}
+
+input [type="email"], input [type="password"],input [type="date"], select {
+    width: 230px;
+    height: 50px;
+}
+
+fieldset {
+    width: 100%;
+    padding: 30px 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: none;
+}
+
+form .button {
+    width: 100%;
+}
+
+select {
+    background: url(./assets/image/Arrow-down.svg) no-repeat right 15px top 50%;
+    appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(./assets/image/calendar.svg) no-repeat;
+}
+
+.footer {
+    background-color: #0A61F7;
+    text-align: center;
+    padding: 20px 0;
+}
+
+small {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color:#FFF;
 }
