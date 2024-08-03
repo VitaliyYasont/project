@@ -1,9 +1,10 @@
 * {
     padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+	margin: 0px;
+	box-sizing: border-box;
 }
 
+html, 
 body {
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -11,25 +12,67 @@ body {
 
 a {
     text-decoration: none;
-    color: #FFF
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 ul {
     list-style: none;
 }
 
-.header {
-    background-color: #0a61f7;
-    padding: 14px;
-}
-
-.logo {
-    width: 208px;
-    height: 48px; 
+button {
+    border: none;
     background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-.meny-link {
+button:hover {
+    transform: translateY(-5px);
+}
+
+.title {
+    color: #363940;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 43px;
+}
+
+.text {
+    color: #95A1BB;
+    font-size: 16px;
+    font-weight: 400; 
+    line-height: 22px;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background-color: #0A61F7;
+    padding: 14px 0;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
+.menu-link {
     color: #FFF;
     font-size: 12px;
     font-weight: 500;
@@ -38,56 +81,52 @@ ul {
     text-transform: uppercase;
 }
 
-button {
-    border: none;
-    background-color: transparent;
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
 }
-
-.title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 43px;
-    color: #363940;
-}
-
-.text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #95a1bb;
-}
-
-/*=================================style 1 section============*/
 
 .main-title {
-    font-weight: 500;
-    font-size: 58px;
-    line-height: 68px;
     color: #363940;
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 68px;
     margin-bottom: 30px;
 }
 
 .main .text {
     margin-bottom: 40px;
+    max-width: 380px;
 }
 
 .button {
     width: 152px;
-    height: 50px;
+    height: 51px;
     border-radius: 4px;
-    background-color: #0a61f7;
-    font-weight: 500;
+    background: #0A61F7;
     font-size: 14px;
+    color: #FFF;
+    font-weight: 500;
     line-height: 19.6px;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    color: #fff;
 }
-/*========================================style 2 section==========*/
+
+.main-img {
+    align-self: flex-end;
+}
 
 .rates-section {
-    background-color: #f9fafc;
-    padding: 100px;
+    background-color: #F9FAFC;
+    padding: 100px 0;
+}
+
+.rates-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center
 }
 
 .rates-section .title {
@@ -101,67 +140,67 @@ button {
 .table {
     border-collapse: collapse;
 }
-th, td {
-    border: 1px solid #95a1bb;
+
+th, td { 
+    border: 1px solid #95A1BB;
     width: 240px;
     padding: 15px 0;
     text-align: center;
 }
 
-.table-subtitle {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
+.table-title {
     color: #363940;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.table-subtitle {
+    color: #363940;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
     text-align: left;
     padding-left: 20px;
 }
 
-.table-title {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color: #363940;
+.table-subtitle.gray { 
+    color: #95A1BB; 
 }
-
-.table-subtitle.gray {
-    color: #95a1bb;
-}
-
 
 .table-link {
-    color: #0a61f7;
+    color: #0A61F7;
 }
 
 .table-button {
-    border: 1px solid #0a61f7;
-    border-radius: 4px;
     width: 140px;
-    height: 36px;
-    font-family: "Rubik", sans-serif;
-    font-weight: 500;
+    padding: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #0A61F7;
     font-size: 12px;
+    font-weight: 500;
     line-height: 19.6px;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    text-align: center;
-    color: #0a61f7;
+    color: #0A61F7;
 }
 
-.table-button.active {
-    background: #0a61f7;
+.table-button.active { 
+    background: #0A61F7;
     color: #FFF;
 }
 
-.table-footer {
+.table-footer td { 
     padding: 30px 0;
 }
 
-/*========================style 3 section==============*/
-
 .create-account-section {
-    padding: 100px;
+    padding: 100px 0;
+}
+
+.account-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .create-account-section .title {
@@ -172,34 +211,60 @@ th, td {
     margin-bottom: 40px;
     max-width: 500px;
 }
+
 .list-item {
-    list-style-image: url(./assets/image/Check.svg);
+    list-style-image: url("./assets/image/Check.svg");
     margin-left: 30px;
     margin-bottom: 15px;
     color: #363940;
 }
 
-input, select, textarea, fieldset {
-    border: 1px solid #95a1bb;
+form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, select, fieldset, textarea {
     border-radius: 4px;
+    border: 1px solid #95A1BB;
     padding: 14px 15px;
 }
 
-input, select, textarea, fieldset, label, legend, input::placeholder, select::placeholder, textarea::placeholder {
-    font-weight: 400;
+input, select, fieldset, textarea, label, legend, input::placeholder, select::placeholder, textarea::placeholder {
+    color: #95A1BB;
     font-size: 16px;
+    font-weight: 400; 
     line-height: 22.4px;
-    color: #95a1bb;
     font-family: inherit;
 }
 
-input [type="text"] {
+input[type="text"] {
     width: 100%;
 }
 
-input [type="email"], input [type="password"],input [type="date"], select {
+input[type="email"], input[type="password"], input[type="date"], select {
     width: 230px;
     height: 50px;
+    flex-grow: 1;
+}
+
+input[type="radio"], input[type="checkbox"], input[type="date"], select {
+    cursor: pointer;
+}
+
+.stack,
+fieldset {
+    display: flex;
+    column-gap: 30px;
+} 
+
+.fields-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 fieldset {
