@@ -85,7 +85,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    min-height: 800px;
 }
 
 .main-title {
@@ -302,4 +302,24 @@ small {
     font-weight: 400;
     line-height: 22px;
     color:#FFF;
+}
+
+@media screen and (max-width: 1440px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+    .main-info {
+        align-self: flex-start;
+        margin: 100px 0 80px;
+    }
+    .main-img {
+        align-self: center;
+    }
+    .table {
+        width: 940px;
+    }
+    .table-wrapper {
+        overflow-x: auto;
+        width: 100%;
+    }
 }
