@@ -321,5 +321,12 @@ small {
     .table-wrapper {
         overflow-x: auto;
         width: 100%;
+        max-width: 940px;
+    }
+    .account-wrapper {
+        flex-direction: column;
+    }
+    .create-account-section .text {
+        max-width: unset;
     }
 }
